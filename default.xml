@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+  <remote name="qmlos" alias="origin" fetch="."/>
+  <remote name="greenisland" alias="origin" fetch="ssh://git@github.com/greenisland"/>
+  <remote name="hawaii" alias="origin" fetch="ssh://git@github.com/hawaii-desktop"/>
+
+  <default revision="develop" remote="qmlos" sync-j="4"/>
+
+  <project name="repotools" path="repotools" revision="master" groups="misc">
+    <copyfile src="config/_clang-format" dest=".clang-format"/>
+    <copyfile src=".commit-template" dest=".commit-template"/>
+  </project>
+
+  <project name="greenisland" path="greenisland" remote="greenisland" revision="master" groups="desktop"/>
+  <project name="shell" path="shell" groups="desktop"/>
+  <project name="workspace" path="workspace" groups="desktop"/>
+
+  <project name="fluid" path="fluid" groups="libraries"/>
+  <project name="qtaccountsservice" path="qtaccountsservice" remote="hawaii" revision="master" groups="libraries"/>
+  <project name="libqmlos" path="libqmlos" groups="libraries"/>
+
+  <project name="appcenter" path="appcenter" groups="apps"/>
+  <project name="settings" path="settings" groups="apps"/>
+  <project name="terminal" path="terminal" groups="apps"/>
+  <project name="files" path="files" groups="apps"/>
+</manifest>
