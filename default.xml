@@ -8,7 +8,7 @@
 
   <project name="repotools" path="repotools" revision="master" groups="misc">
     <copyfile src="config/_clang-format" dest=".clang-format"/>
-    <copyfile src=".commit-template" dest=".commit-template"/>
+    <copyfile src="config/_commit-template" dest=".commit-template"/>
   </project>
 
   <project name="greenisland" path="greenisland" remote="greenisland" revision="master" groups="desktop"/>
