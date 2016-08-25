@@ -22,6 +22,8 @@
 
   <project name="appcenter" path="appcenter" groups="apps"/>
   <project name="settings" path="settings" groups="apps"/>
+<!--
   <project name="terminal" path="terminal" groups="apps"/>
+-->
   <project name="files" path="files" groups="apps"/>
 </manifest>
