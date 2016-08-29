@@ -6,7 +6,7 @@
 
   <default revision="develop" remote="qmlos" sync-j="4"/>
 
-  <project name="repotools" path="repotools" revision="master" groups="misc">
+  <project name="repotools" path="repotools" groups="misc">
     <copyfile src="config/_clang-format" dest=".clang-format"/>
     <copyfile src="config/_commit-template" dest=".commit-template"/>
     <copyfile src="config/CMakeLists.txt" dest="CMakeLists.txt"/>
