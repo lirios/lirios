@@ -56,13 +56,13 @@ To clone the latest source of all projects over SSH, perform the following proce
 For developer access:
 
 ```sh
-repo init -u ssh://git@github.com/qmlos/qmlos.git -b develop
+repo init -u ssh://git@github.com/qmlos/qmlos.git -b master
 ```
 
 For read-only access:
 
 ```sh
-repo init -u https://github.com/qmlos/qmlos.git -b develop
+repo init -u https://github.com/qmlos/qmlos.git -b master
 ```
 
 2. Synchronize the repository by executing the following command:
