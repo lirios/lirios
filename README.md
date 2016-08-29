@@ -86,7 +86,7 @@ Now set git to use the commit template that will help you write
 good commit messages:
 
 ```sh
-ROOTDIR=$(pwd) repo forall -c 'git config commit.template $ROOTDIR/misc/repotools/.commit-template'
+ROOTDIR=$(pwd) repo forall -c 'git config commit.template $ROOTDIR/.commit-template'
 ```
 
 ## General issue tracker
