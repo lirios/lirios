@@ -17,7 +17,7 @@
   <project name="workspace" path="workspace" groups="desktop"/>
 
   <project name="fluid" path="fluid" groups="libraries"/>
-  <project name="qtaccountsservice" path="qtaccountsservice" remote="hawaii" revision="master" groups="libraries"/>
+  <project name="qtaccountsservice" path="qtaccountsservice" remote="hawaii" revision="develop" groups="libraries"/>
   <project name="libqmlos" path="libqmlos" groups="libraries"/>
 
   <project name="appcenter" path="appcenter" groups="apps"/>
