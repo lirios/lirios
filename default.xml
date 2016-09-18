@@ -11,6 +11,7 @@
     <copyfile src="config/_commit-template" dest=".commit-template"/>
     <copyfile src="config/CMakeLists.txt" dest="CMakeLists.txt"/>
   </project>
+  <project name="rpms" path="rpms" groups="misc"/>
 
   <project name="greenisland" path="greenisland" remote="greenisland" revision="develop" groups="desktop"/>
   <project name="shell" path="shell" groups="desktop"/>
