@@ -3,8 +3,8 @@ qmlOS
 
 [![ZenHub.io](https://img.shields.io/badge/supercharged%20by-zenhub.io-blue.svg)](https://zenhub.io)
 
-[![GitHub issues](https://img.shields.io/github/issues/qmlos/qmlos.svg)](https://github.com/qmlos/qmlos/issues)
-[![Maintained](https://img.shields.io/maintenance/yes/2016.svg)](https://github.com/qmlos/qmlos/commits/master)
+[![GitHub issues](https://img.shields.io/github/issues/lirios/lirios.svg)](https://github.com/lirios/lirios/issues)
+[![Maintained](https://img.shields.io/maintenance/yes/2016.svg)](https://github.com/lirios/lirios/commits/master)
 
 This repository contains:
 
@@ -40,11 +40,11 @@ curl http://commondatastorage.googleapis.com/git-repo-downloads/repo > ~/bin/rep
 chmod a+x ~/bin/repo
 ```
 
-4. Create a new directory for Hawaii and then switch to it by executing the following commands:
+4. Create a new directory for Liri and then switch to it by executing the following commands:
 
 ```sh
-mkdir ~/qmlos
-cd ~/qmlos
+mkdir ~/lirios
+cd ~/lirios
 ```
 
 ### Clone latest sources
@@ -56,13 +56,13 @@ To clone the latest source of all projects over SSH, perform the following proce
 For developer access:
 
 ```sh
-repo init -u ssh://git@github.com/qmlos/qmlos.git -b develop
+repo init -u ssh://git@github.com/lirios/lirios.git -b develop
 ```
 
 For read-only access:
 
 ```sh
-repo init -u https://github.com/qmlos/qmlos.git -b develop
+repo init -u https://github.com/lirios/lirios.git -b develop
 ```
 
 2. Synchronize the repository by executing the following command:
@@ -91,17 +91,17 @@ ROOTDIR=$(pwd) repo forall -c 'git config commit.template $ROOTDIR/.commit-templ
 
 ## General issue tracker
 
-Click on the [Issues](https://github.com/qmlos/qmlos/issues) tab
+Click on the [Issues](https://github.com/lirios/lirios/issues) tab
 and submit issues.
 
 ## Wiki
 
-Click on the [Wiki](https://github.com/qmlos/qmlos/wiki) tab, read and/or write new content.
+Click on the [Wiki](https://github.com/lirios/lirios/wiki) tab, read and/or write new content.
 
 Alternatively you can clone the Wiki repository, work on your local system and push the changes back.
 
 Clone the repository with:
 
 ```sh
-git clone git@github.com:qmlos/qmlos.wiki.git
+git clone git@github.com:lirios/lirios.wiki.git
 ```

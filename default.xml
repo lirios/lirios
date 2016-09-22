@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
-  <remote name="qmlos" alias="origin" fetch="."/>
+  <remote name="lirios" alias="origin" fetch="."/>
   <remote name="greenisland" alias="origin" fetch="ssh://git@github.com/greenisland"/>
   <remote name="hawaii" alias="origin" fetch="ssh://git@github.com/hawaii-desktop"/>
 
-  <default revision="develop" remote="qmlos" sync-j="4"/>
+  <default revision="develop" remote="lirios" sync-j="4"/>
 
   <project name="repotools" path="repotools" groups="misc">
     <copyfile src="config/_clang-format" dest=".clang-format"/>
