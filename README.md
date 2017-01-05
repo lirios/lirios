@@ -1,10 +1,10 @@
-qmlOS
-=====
+Liri OS
+=======
 
 [![ZenHub.io](https://img.shields.io/badge/supercharged%20by-zenhub.io-blue.svg)](https://zenhub.io)
 
 [![GitHub issues](https://img.shields.io/github/issues/lirios/lirios.svg)](https://github.com/lirios/lirios/issues)
-[![Maintained](https://img.shields.io/maintenance/yes/2016.svg)](https://github.com/lirios/lirios/commits/master)
+[![Maintained](https://img.shields.io/maintenance/yes/2017.svg)](https://github.com/lirios/lirios/commits/master)
 
 This repository contains:
 
