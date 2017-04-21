@@ -7,7 +7,7 @@
   <project name="repotools" path="repotools" groups="misc">
     <copyfile src="config/_clang-format" dest=".clang-format"/>
     <copyfile src="config/_commit-template" dest=".commit-template"/>
-    <copyfile src="config/CMakeLists.txt" dest="CMakeLists.txt"/>
+    <copyfile src="config/liri.pro" dest="liri.pro"/>
   </project>
 
   <project name="shell" path="shell" groups="desktop"/>
@@ -17,9 +17,9 @@
   <project name="qtaccountsservice" path="qtaccountsservice" groups="libraries"/>
   <project name="vibe" path="vibe" groups="libraries"/>
 
-  <project name="browser" path="browser" groups="apps"/>
-  <project name="calculator" path="calculator" groups="apps"/>
-  <project name="text" path="text" groups="apps"/>
+  <project name="browser" path="liri-browser" groups="apps"/>
+  <project name="calculator" path="liri-calculator" groups="apps"/>
+  <project name="text" path="liri-text" groups="apps"/>
   <project name="appcenter" path="appcenter" groups="apps"/>
   <project name="settings" path="settings" groups="apps"/>
 <!--
