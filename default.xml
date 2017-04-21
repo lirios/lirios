@@ -1,8 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
   <remote name="lirios" alias="origin" fetch="."/>
-  <remote name="greenisland" alias="origin" fetch="ssh://git@github.com/greenisland"/>
-  <remote name="hawaii" alias="origin" fetch="ssh://git@github.com/hawaii-desktop"/>
 
   <default revision="develop" remote="lirios" sync-j="4"/>
 
@@ -11,15 +9,13 @@
     <copyfile src="config/_commit-template" dest=".commit-template"/>
     <copyfile src="config/CMakeLists.txt" dest="CMakeLists.txt"/>
   </project>
-  <project name="rpms" path="rpms" revision="master" groups="misc"/>
 
-  <project name="greenisland" path="greenisland" remote="greenisland" revision="develop" groups="desktop"/>
   <project name="shell" path="shell" groups="desktop"/>
   <project name="workspace" path="workspace" groups="desktop"/>
 
   <project name="fluid" path="fluid" groups="libraries"/>
-  <project name="qtaccountsservice" path="qtaccountsservice" remote="hawaii" revision="develop" groups="libraries"/>
-  <project name="libqmlos" path="libqmlos" groups="libraries"/>
+  <project name="qtaccountsservice" path="qtaccountsservice" groups="libraries"/>
+  <project name="vibe" path="vibe" groups="libraries"/>
 
   <project name="appcenter" path="appcenter" groups="apps"/>
   <project name="settings" path="settings" groups="apps"/>
