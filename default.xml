@@ -13,6 +13,7 @@
   </project>
   <project name="qmake-features" path="misc/qmake-features" groups="misc"/>
 
+  <project name="wayland" path="wayland" groups="desktop"/>
   <project name="shell" path="shell" groups="desktop"/>
   <project name="workspace" path="workspace" groups="desktop"/>
 
