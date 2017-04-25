@@ -80,6 +80,7 @@ Before you start developing make sure you have local branches:
 
 ```sh
 repo forall -c 'git checkout $REPO_RREV'
+repo forall -c 'git submodule update --init --recursive'
 ```
 
 Now set git to use the commit template that will help you write
