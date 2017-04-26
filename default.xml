@@ -22,6 +22,7 @@
   <project name="fluid" path="fluid" groups="libraries"/>
   <project name="qtaccountsservice" path="qtaccountsservice" groups="libraries"/>
   <project name="qtgsettings" path="qtgsettings" groups="libraries"/>
+  <project name="libliri" path="libliri" groups="libraries"/>
   <project name="vibe" path="vibe" groups="libraries"/>
 
   <project name="browser" path="liri-browser" groups="apps"/>
