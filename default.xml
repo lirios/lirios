@@ -10,6 +10,7 @@
     <copyfile src="config/_clang-format" dest=".clang-format"/>
     <copyfile src="config/_commit-template" dest=".commit-template"/>
     <copyfile src="config/liri.pro" dest="liri.pro"/>
+    <copyfile src="config/liri.qbs" dest="liri.qbs"/>
   </project>
   <project name="qmake-features" path="misc/qmake-features" groups="misc"/>
 
