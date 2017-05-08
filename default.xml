@@ -27,9 +27,9 @@
   <project name="libliri" path="libliri" groups="libraries"/>
   <project name="vibe" path="vibe" groups="libraries"/>
 
-  <project name="browser" path="liri-browser" groups="apps"/>
-  <project name="calculator" path="liri-calculator" groups="apps"/>
-  <project name="text" path="liri-text" groups="apps"/>
+  <project name="browser" path="browser" groups="apps"/>
+  <project name="calculator" path="calculator" groups="apps"/>
+  <project name="text" path="text" groups="apps"/>
   <project name="appcenter" path="appcenter" groups="apps"/>
   <project name="settings" path="settings" groups="apps"/>
 <!--
