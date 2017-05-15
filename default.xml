@@ -19,6 +19,7 @@
   <project name="shell" path="shell" groups="desktop"/>
   <project name="workspace" path="workspace" groups="desktop"/>
   <project name="wallpapers" path="wallpapers" groups="desktop"/>
+  <project name="themes" path="themes" groups="desktop"/>
 
   <project name="fluid" path="fluid" groups="libraries"/>
   <project name="qtaccountsservice" path="qtaccountsservice" groups="libraries"/>
