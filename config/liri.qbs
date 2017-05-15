@@ -70,7 +70,7 @@ Project {
     SubProject {
         filePath: "wayland/wayland.qbs"
         Properties {
-            autotestEnabled: project.autotestEnabled
+            autotestEnabled: false // project.autotestEnabled
         }
     }
 
