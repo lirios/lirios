@@ -95,10 +95,22 @@ Project {
     }
 
     SubProject {
+        filePath: "browser/browser.qbs"
+    }
+
+    SubProject {
         filePath: "calculator/calculator.qbs"
     }
 
     SubProject {
         filePath: "appcenter/appcenter.qbs"
+    }
+
+    SubProject {
+        filePath: "files/files.qbs"
+    }
+
+    SubProject {
+        filePath: "terminal/terminal.qbs"
     }
 }
