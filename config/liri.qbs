@@ -91,6 +91,10 @@ Project {
     }
 
     SubProject {
+        filePath: "themes/themes.qbs"
+    }
+
+    SubProject {
         filePath: "wallpapers/wallpapers.qbs"
     }
 
@@ -100,6 +104,10 @@ Project {
 
     SubProject {
         filePath: "calculator/calculator.qbs"
+    }
+
+    SubProject {
+        filePath: "text/text.qbs"
     }
 
     SubProject {
