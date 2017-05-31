@@ -38,7 +38,7 @@ Project {
     SubProject {
         filePath: "fluid/fluid.qbs"
         Properties {
-            autotestEnabled: false // project.autotestEnabled
+            autotestEnabled: project.autotestEnabled
         }
     }
 
@@ -70,7 +70,7 @@ Project {
     SubProject {
         filePath: "wayland/wayland.qbs"
         Properties {
-            autotestEnabled: false // project.autotestEnabled
+            autotestEnabled: project.autotestEnabled
         }
     }
 
