@@ -12,7 +12,8 @@
     <copyfile src="config/liri.qbs" dest="liri.qbs"/>
   </project>
   <project name="qmake-features" path="misc/qmake-features" groups="misc"/>
-  <project name="qbs-shared" path="misc/qbs-shared" groups="misc"/>
+
+  <project name="qbs-shared" path="qbs-shared"/>
 
   <project name="platformtheme" path="platformtheme" groups="desktop"/>
   <project name="wayland" path="wayland" groups="desktop"/>

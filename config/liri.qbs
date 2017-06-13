@@ -10,7 +10,8 @@ Project {
 
     property bool autotestEnabled: true
 
-    minimumQbsVersion: "1.6"
+    minimumQbsVersion: "1.8.0"
+    qbsSearchPaths: ["qbs-shared"]
 
     /*
     references: {
@@ -34,6 +35,10 @@ Project {
         }
     }
     */
+
+    SubProject {
+        filePath: "qbs-shared/qbs-shared.qbs"
+    }
 
     SubProject {
         filePath: "fluid/fluid.qbs"
