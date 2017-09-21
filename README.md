@@ -12,83 +12,10 @@ This repository contains:
 * General issue tracker.
 * Wiki.
 
-## Manifest
+## Contributor Guide
 
-Manifest files describe the project structure and is used by git-repo
-to fetch all the packages repositories.
-
-### How to use it
-
-To prepare for cloning, perform the following procedure:
-
-1. Create ~/bin/ subdirectory, include it in PATH, and then switch to it by executing the following commands:
-
-```sh
-mkdir ~/bin/
-PATH=~/bin:$PATH
-```
-
-2. Download the repo script by executing the following command:
-
-```sh
-curl http://commondatastorage.googleapis.com/git-repo-downloads/repo > ~/bin/repo
-```
-
-3. Change the attribute of repo to make it executable by executing the command:
-
-```sh
-chmod a+x ~/bin/repo
-```
-
-4. Create a new directory for Liri and then switch to it by executing the following commands:
-
-```sh
-mkdir ~/lirios
-cd ~/lirios
-```
-
-### Clone latest sources
-
-To clone the latest source of all projects over SSH, perform the following procedure:
-
-1. Initialize the repository by executing one of the following commands, as appropriate.
-
-For developer access:
-
-```sh
-repo init -u ssh://git@github.com/lirios/lirios.git -b develop
-```
-
-For read-only access:
-
-```sh
-repo init -u https://github.com/lirios/lirios.git -b develop
-```
-
-2. Synchronize the repository by executing the following command:
-
-```sh
-repo sync
-```
-
-### Get ready for development
-
-repo doesn't create local branches for you, hence you end up with a
-detached head that points to the last known good commit.
-
-Before you start developing make sure you have local branches:
-
-```sh
-repo forall -c 'git checkout $REPO_RREV'
-repo forall -c 'git submodule update --init --recursive'
-```
-
-Now set git to use the commit template that will help you write
-good commit messages:
-
-```sh
-ROOTDIR=$(pwd) repo forall -c 'git config commit.template $ROOTDIR/.commit-template'
-```
+Please read the detailed [contributor guide](https://github.com/lirios/lirios/wiki/Contributor-Guide)
+available in the wiki.
 
 ## General issue tracker
 
