@@ -2,7 +2,7 @@
 <manifest>
   <remote name="lirios" alias="origin" fetch="."/>
 
-  <default revision="develop" remote="lirios" sync-j="4"/>
+  <default revision="develop" remote="lirios" sync-j="8" sync-s="true"/>
 
   <project name="repotools" path="misc/repotools" groups="misc"/>
   <project name="lirios" path="misc/manifest" groups="misc">
