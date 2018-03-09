@@ -14,6 +14,7 @@
   </project>
 
   <project name="qbs-shared" path="qbs-shared"/>
+  <project name="calamares-branding" path="calamares-branding"/>
 
   <project name="platformtheme" path="platformtheme" groups="desktop"/>
   <project name="wayland" path="wayland" groups="desktop"/>
