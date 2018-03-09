@@ -12,7 +12,6 @@
     <copyfile src="config/liri.qbs" dest="liri.qbs"/>
     <copyfile src="env-setup.sh" dest="env-setup.sh"/>
   </project>
-  <project name="qmake-features" path="misc/qmake-features" groups="misc"/>
 
   <project name="qbs-shared" path="qbs-shared"/>
 
