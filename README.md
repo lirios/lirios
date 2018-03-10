@@ -15,8 +15,7 @@ This repository contains:
 
 ## Contributor Guide
 
-Please read the detailed [contributor guide](https://github.com/lirios/lirios/wiki/Contributor-Guide)
-available in the wiki.
+Please read the detailed [contributor guide](https://liri-dev.readthedocs.io/en/latest/contributing/contributor-guide/).
 
 ## General issue tracker
 
