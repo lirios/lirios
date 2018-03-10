@@ -12,7 +12,7 @@ Project {
     property bool autotestEnabled: true
     property stringList exclude: []
 
-    minimumQbsVersion: "1.8.0"
+    minimumQbsVersion: "1.9.0"
     qbsSearchPaths: ["qbs-shared"]
 
     SubProject {
