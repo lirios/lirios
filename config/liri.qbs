@@ -23,6 +23,13 @@ Project {
     }
 
     SubProject {
+        filePath: "calamares-brandsing/calamares-branding.qbs"
+        Properties {
+            condition: project.exclude.indexOf("calamares-branding") == -1
+        }
+    }
+
+    SubProject {
         filePath: "fluid/fluid.qbs"
         Properties {
             condition: project.exclude.indexOf("fluid") == -1
