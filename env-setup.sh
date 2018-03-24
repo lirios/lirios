@@ -1,14 +1,14 @@
 #!/bin/bash
 
 if [ -n "$LIRIDIR" ]; then
-  LIRIDIR="$(realpath $LIRIDIR)"
+    LIRIDIR="$(realpath $LIRIDIR)"
 else
-  REPOBASE="$(realpath $(dirname ${BASH_SOURCE[0]}))"
-  LIRIDIR="$REPOBASE/.build"
+    REPOBASE="$(realpath $(dirname ${BASH_SOURCE[0]}))"
+    LIRIDIR="$REPOBASE/.build"
 fi
 
 if [ ! -d "$LIRIDIR" ]; then
-  mkdir -p "$LIRIDIR"
+    mkdir -p "$LIRIDIR"
 fi
 
 export LD_LIBRARY_PATH="$LIRIDIR/lib:$LD_LIBRARY_PATH"
@@ -20,5 +20,5 @@ export PKG_CONFIG_PATH="$LIRIDIR/lib/pkgconfig:$PKG_CONFIG_PATH"
 export PATH="$LIRIDIR/bin:$PATH"
 
 if [ "$1" != "nvidia" ]; then
-  export QT_XCB_GL_INTEGRATION="xcb_egl"
+    export QT_XCB_GL_INTEGRATION="xcb_egl"
 fi
