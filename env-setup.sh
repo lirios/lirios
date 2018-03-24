@@ -4,7 +4,7 @@ if [ -n "$LIRIDIR" ]; then
     LIRIDIR="$(realpath $LIRIDIR)"
 else
     REPOBASE="$(realpath $(dirname ${BASH_SOURCE[0]}))"
-    LIRIDIR="$REPOBASE/.build"
+    LIRIDIR="$REPOBASE/.build/debug/install-root"
 fi
 
 if [ ! -d "$LIRIDIR" ]; then
