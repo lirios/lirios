@@ -21,7 +21,7 @@ export XDG_CONFIG_DIRS="$LIRIDIR/etc/xdg:/etc/xdg"
 export QT_PLUGIN_PATH="$LIRIDIR/$LIRI_PREFIX/lib/plugins"
 export QML2_IMPORT_PATH="$LIRIDIR/$LIRI_PREFIX/lib/qml:$QML2_IMPORT_PATH"
 export PKG_CONFIG_PATH="$LIRIDIR/$LIRI_PREFIX/lib/pkgconfig:$PKG_CONFIG_PATH"
-export PATH="$LIRIDIR/bin:$PATH"
+export PATH="$LIRIDIR/$LIRI_PREFIX/bin:$PATH"
 
 if [ "$1" != "nvidia" ]; then
     export QT_XCB_GL_INTEGRATION="xcb_egl"
