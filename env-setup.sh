@@ -1,5 +1,9 @@
 #!/bin/bash
 
+if [ -z "$LIRI_PREFIX" ]; then
+    LIRI_PREFIX=/usr/local
+fi
+
 if [ -n "$LIRIDIR" ]; then
     LIRIDIR="$(realpath $LIRIDIR)"
 else
@@ -11,12 +15,12 @@ if [ ! -d "$LIRIDIR" ]; then
     mkdir -p "$LIRIDIR"
 fi
 
-export LD_LIBRARY_PATH="$LIRIDIR/lib:$LD_LIBRARY_PATH"
-export XDG_DATA_DIRS="$LIRIDIR/share:/usr/local/share:/usr/share:~/.local/share:~/.local/share/flatpak/exports/share"
+export LD_LIBRARY_PATH="$LIRIDIR/$LIRI_PREFIX/lib:$LD_LIBRARY_PATH"
+export XDG_DATA_DIRS="$LIRIDIR/$LIRI_PREFIX/share:/usr/local/share:/usr/share:~/.local/share:~/.local/share/flatpak/exports/share"
 export XDG_CONFIG_DIRS="$LIRIDIR/etc/xdg:/etc/xdg"
-export QT_PLUGIN_PATH="$LIRIDIR/lib/plugins"
-export QML2_IMPORT_PATH="$LIRIDIR/lib/qml:$QML2_IMPORT_PATH"
-export PKG_CONFIG_PATH="$LIRIDIR/lib/pkgconfig:$PKG_CONFIG_PATH"
+export QT_PLUGIN_PATH="$LIRIDIR/$LIRI_PREFIX/lib/plugins"
+export QML2_IMPORT_PATH="$LIRIDIR/$LIRI_PREFIX/lib/qml:$QML2_IMPORT_PATH"
+export PKG_CONFIG_PATH="$LIRIDIR/$LIRI_PREFIX/lib/pkgconfig:$PKG_CONFIG_PATH"
 export PATH="$LIRIDIR/bin:$PATH"
 
 if [ "$1" != "nvidia" ]; then
