@@ -23,6 +23,8 @@ export QML2_IMPORT_PATH="$LIRIDIR/$LIRI_PREFIX/lib/qml:$QML2_IMPORT_PATH"
 export PKG_CONFIG_PATH="$LIRIDIR/$LIRI_PREFIX/lib/pkgconfig:$PKG_CONFIG_PATH"
 export PATH="$LIRIDIR/$LIRI_PREFIX/bin:$PATH"
 
-if [ "$1" != "nvidia" ]; then
+if [ "$1" == "nvidia" ]; then
+    export QT_XCB_GL_INTEGRATION="xcb_glx"
+else
     export QT_XCB_GL_INTEGRATION="xcb_egl"
 fi
