@@ -4,11 +4,15 @@ if [ -z "$LIRI_PREFIX" ]; then
     LIRI_PREFIX=/usr/local
 fi
 
+if [ -z "$LIRI_CONFIG_NAME" ]; then
+    LIRI_CONFIG_NAME="qtc_Desktop_Debug"
+fi
+
 if [ -n "$LIRIDIR" ]; then
     LIRIDIR="$(realpath $LIRIDIR)"
 else
     REPOBASE="$(realpath $(dirname ${BASH_SOURCE[0]}))"
-    LIRIDIR="$REPOBASE/.build/debug/install-root"
+    LIRIDIR="$REPOBASE/.build/$LIRI_CONFIG_NAME/install-root"
 fi
 
 if [ ! -d "$LIRIDIR" ]; then
