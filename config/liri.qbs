@@ -58,6 +58,15 @@ Project {
     }
 
     SubProject {
+        filePath: "qtudev/qtudev.qbs"
+        Properties {
+            condition: project.exclude.indexOf("qtudev") == -1
+            useStaticAnalyzer: project.useStaticAnalyzer
+            autotestEnabled: project.autotestEnabled
+        }
+    }
+
+    SubProject {
         filePath: "libliri/libliri.qbs"
         Properties {
             condition: project.exclude.indexOf("libliri") == -1
