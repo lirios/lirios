@@ -125,9 +125,9 @@ Project {
     }
 
     SubProject {
-        filePath: "material-decoration/material-decoration.qbs"
+        filePath: "materialdecoration/materialdecoration.qbs"
         Properties {
-            condition: project.exclude.indexOf("material-decoration") == -1
+            condition: project.exclude.indexOf("materialdecoration") == -1
             useStaticAnalyzer: project.useStaticAnalyzer
         }
     }

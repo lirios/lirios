@@ -17,7 +17,7 @@
   <project name="calamares-branding" path="calamares-branding"/>
 
   <project name="platformtheme" path="platformtheme" groups="desktop"/>
-  <project name="material-decoration" path="material-decoration" groups="desktop"/>
+  <project name="materialdecoration" path="materialdecoration" groups="desktop"/>
   <project name="wayland" path="wayland" groups="desktop"/>
   <project name="shell" path="shell" groups="desktop"/>
   <project name="workspace" path="workspace" groups="desktop"/>
