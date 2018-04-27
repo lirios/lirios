@@ -125,6 +125,14 @@ Project {
     }
 
     SubProject {
+        filePath: "material-decoration/material-decoration.qbs"
+        Properties {
+            condition: project.exclude.indexOf("material-decoration") == -1
+            useStaticAnalyzer: project.useStaticAnalyzer
+        }
+    }
+
+    SubProject {
         filePath: "themes/themes.qbs"
         Properties {
             condition: project.exclude.indexOf("themes") == -1
