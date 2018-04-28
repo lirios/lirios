@@ -101,6 +101,22 @@ Project {
     }
 
     SubProject {
+        filePath: "screencast/screencast.qbs"
+        Properties {
+            condition: project.exclude.indexOf("screencast") == -1
+            useStaticAnalyzer: project.useStaticAnalyzer
+        }
+    }
+
+    SubProject {
+        filePath: "screenshot/screenshot.qbs"
+        Properties {
+            condition: project.exclude.indexOf("screenshot") == -1
+            useStaticAnalyzer: project.useStaticAnalyzer
+        }
+    }
+
+    SubProject {
         filePath: "workspace/workspace.qbs"
         Properties {
             condition: project.exclude.indexOf("workspace") == -1

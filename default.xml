@@ -20,6 +20,8 @@
   <project name="materialdecoration" path="materialdecoration" groups="desktop"/>
   <project name="wayland" path="wayland" groups="desktop"/>
   <project name="shell" path="shell" groups="desktop"/>
+  <project name="screencast" path="screencast" groups="desktop"/>
+  <project name="screenshot" path="screenshot" groups="desktop"/>
   <project name="workspace" path="workspace" groups="desktop"/>
   <project name="wallpapers" path="wallpapers" groups="desktop"/>
   <project name="themes" path="themes" groups="desktop"/>
