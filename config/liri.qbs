@@ -101,6 +101,14 @@ Project {
     }
 
     SubProject {
+        filePath: "xdg-desktop-portal-liri/xdg-desktop-portal-liri.qbs"
+        Properties {
+            condition: project.exclude.indexOf("xdg-desktop-portal-liri") == -1
+            useStaticAnalyzer: project.useStaticAnalyzer
+        }
+    }
+
+    SubProject {
         filePath: "screencast/screencast.qbs"
         Properties {
             condition: project.exclude.indexOf("screencast") == -1
