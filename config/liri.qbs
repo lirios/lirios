@@ -157,6 +157,14 @@ Project {
     }
 
     SubProject {
+        filePath: "networkmanager/networkmanager.qbs"
+        Properties {
+            condition: project.exclude.indexOf("networkmanager") == -1
+            useStaticAnalyzer: project.useStaticAnalyzer
+        }
+    }
+
+    SubProject {
         filePath: "themes/themes.qbs"
         Properties {
             condition: project.exclude.indexOf("themes") == -1

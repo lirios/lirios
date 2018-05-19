@@ -16,6 +16,7 @@
   <project name="qbs-shared" path="qbs-shared" groups="common"/>
 
   <project name="materialdecoration" path="materialdecoration" groups="desktop"/>
+  <project name="networkmanager" path="networkmanager" groups="desktop"/>
   <project name="platformtheme" path="platformtheme" groups="desktop"/>
   <project name="screencast" path="screencast" groups="desktop"/>
   <project name="screenshot" path="screenshot" groups="desktop"/>
