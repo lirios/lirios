@@ -13,32 +13,33 @@
     <copyfile src="env-setup.sh" dest="env-setup.sh"/>
   </project>
 
-  <project name="qbs-shared" path="qbs-shared"/>
-  <project name="calamares-branding" path="calamares-branding"/>
+  <project name="qbs-shared" path="qbs-shared" groups="common"/>
 
-  <project name="platformtheme" path="platformtheme" groups="desktop"/>
   <project name="materialdecoration" path="materialdecoration" groups="desktop"/>
-  <project name="wayland" path="wayland" groups="desktop"/>
-  <project name="shell" path="shell" groups="desktop"/>
+  <project name="platformtheme" path="platformtheme" groups="desktop"/>
   <project name="screencast" path="screencast" groups="desktop"/>
   <project name="screenshot" path="screenshot" groups="desktop"/>
-  <project name="workspace" path="workspace" groups="desktop"/>
-  <project name="wallpapers" path="wallpapers" groups="desktop"/>
-  <project name="xdg-desktop-portal-liri" path="xdg-desktop-portal-liri" groups="desktop"/>
+  <project name="shell" path="shell" groups="desktop"/>
   <project name="themes" path="themes" groups="desktop"/>
+  <project name="wallpapers" path="wallpapers" groups="desktop"/>
+  <project name="wayland" path="wayland" groups="desktop"/>
+  <project name="workspace" path="workspace" groups="desktop"/>
+  <project name="xdg-desktop-portal-liri" path="xdg-desktop-portal-liri" groups="desktop"/>
 
   <project name="fluid" path="fluid" groups="libraries"/>
+  <project name="libliri" path="libliri" groups="libraries"/>
   <project name="qtaccountsservice" path="qtaccountsservice" groups="libraries"/>
   <project name="qtgsettings" path="qtgsettings" groups="libraries"/>
   <project name="qtudev" path="qtudev" groups="libraries"/>
-  <project name="libliri" path="libliri" groups="libraries"/>
   <project name="vibe" path="vibe" groups="libraries"/>
 
+  <project name="appcenter" path="appcenter" groups="apps"/>
   <project name="browser" path="browser" groups="apps"/>
   <project name="calculator" path="calculator" groups="apps"/>
-  <project name="text" path="text" groups="apps"/>
-  <project name="appcenter" path="appcenter" groups="apps"/>
+  <project name="files" path="files" groups="apps"/>
   <project name="settings" path="settings" groups="apps"/>
   <project name="terminal" path="terminal" groups="apps"/>
-  <project name="files" path="files" groups="apps"/>
+  <project name="text" path="text" groups="apps"/>
+
+  <project name="calamares-branding" path="calamares-branding" groups="os"/>
 </manifest>
