@@ -149,6 +149,22 @@ Project {
     }
 
     SubProject {
+        filePath: "power-manager/power-manager.qbs"
+        Properties {
+            condition: project.exclude.indexOf("power-manager") == -1
+            useStaticAnalyzer: project.useStaticAnalyzer
+        }
+    }
+
+    SubProject {
+        filePath: "pulseaudio/pulseaudio.qbs"
+        Properties {
+            condition: project.exclude.indexOf("pulseaudio") == -1
+            useStaticAnalyzer: project.useStaticAnalyzer
+        }
+    }
+
+    SubProject {
         filePath: "materialdecoration/materialdecoration.qbs"
         Properties {
             condition: project.exclude.indexOf("materialdecoration") == -1

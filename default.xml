@@ -18,6 +18,8 @@
   <project name="materialdecoration" path="materialdecoration" groups="desktop"/>
   <project name="networkmanager" path="networkmanager" groups="desktop"/>
   <project name="platformtheme" path="platformtheme" groups="desktop"/>
+  <project name="power-manager" path="power-manager" groups="desktop"/>
+  <project name="pulseaudio" path="pulseaudio" groups="desktop"/>
   <project name="screencast" path="screencast" groups="desktop"/>
   <project name="screenshot" path="screenshot" groups="desktop"/>
   <project name="shell" path="shell" groups="desktop"/>
