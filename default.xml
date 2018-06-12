@@ -26,7 +26,6 @@
   <project name="themes" path="themes" groups="desktop"/>
   <project name="wallpapers" path="wallpapers" groups="desktop"/>
   <project name="wayland" path="wayland" groups="desktop"/>
-  <project name="workspace" path="workspace" groups="desktop"/>
   <project name="xdg-desktop-portal-liri" path="xdg-desktop-portal-liri" groups="desktop"/>
 
   <project name="fluid" path="fluid" groups="libraries"/>

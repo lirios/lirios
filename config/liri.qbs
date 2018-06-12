@@ -227,14 +227,6 @@ Project {
     }
 
     SubProject {
-        filePath: "workspace/workspace.qbs"
-        Properties {
-            condition: project.exclude.indexOf("workspace") == -1
-            useStaticAnalyzer: project.useStaticAnalyzer
-        }
-    }
-
-    SubProject {
         filePath: "xdg-desktop-portal-liri/xdg-desktop-portal-liri.qbs"
         Properties {
             condition: project.exclude.indexOf("xdg-desktop-portal-liri") == -1
