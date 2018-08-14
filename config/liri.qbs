@@ -227,6 +227,15 @@ Project {
     }
 
     SubProject {
+        filePath: "xwayland/xwayland.qbs"
+        Properties {
+            condition: project.exclude.indexOf("xwayland") == -1
+            useStaticAnalyzer: project.useStaticAnalyzer
+            autotestEnabled: project.autotestEnabled
+        }
+    }
+
+    SubProject {
         filePath: "xdg-desktop-portal-liri/xdg-desktop-portal-liri.qbs"
         Properties {
             condition: project.exclude.indexOf("xdg-desktop-portal-liri") == -1
