@@ -227,9 +227,9 @@ Project {
     }
 
     SubProject {
-        filePath: "xwayland/xwayland.qbs"
+        filePath: "qml-xwayland/qml-xwayland.qbs"
         Properties {
-            condition: project.exclude.indexOf("xwayland") == -1
+            condition: project.exclude.indexOf("qml-xwayland") == -1
             useStaticAnalyzer: project.useStaticAnalyzer
             autotestEnabled: project.autotestEnabled
         }
