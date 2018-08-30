@@ -90,6 +90,14 @@ Project {
     }
 
     SubProject {
+        filePath: "player/player.qbs"
+        Properties {
+            condition: project.exclude.indexOf("player") == -1
+            useStaticAnalyzer: project.useStaticAnalyzer
+        }
+    }
+
+    SubProject {
         filePath: "platformtheme/platformtheme.qbs"
         Properties {
             condition: project.exclude.indexOf("platformtheme") == -1
