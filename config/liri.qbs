@@ -211,14 +211,6 @@ Project {
     }
 
     SubProject {
-        filePath: "vibe/vibe.qbs"
-        Properties {
-            condition: project.exclude.indexOf("vibe") == -1
-            useStaticAnalyzer: project.useStaticAnalyzer
-        }
-    }
-
-    SubProject {
         filePath: "wallpapers/wallpapers.qbs"
         Properties {
             condition: project.exclude.indexOf("wallpapers") == -1
