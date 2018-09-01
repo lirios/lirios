@@ -81,6 +81,15 @@ Project {
      */
 
     SubProject {
+        filePath: "desktop/eglfs/eglfs.qbs"
+        Properties {
+            condition: project.exclude.indexOf("eglfs") == -1
+            useStaticAnalyzer: project.useStaticAnalyzer
+            autotestEnabled: project.autotestEnabled
+        }
+    }
+
+    SubProject {
         filePath: "desktop/materialdecoration/materialdecoration.qbs"
         Properties {
             condition: project.exclude.indexOf("materialdecoration") == -1
@@ -163,15 +172,6 @@ Project {
         filePath: "desktop/wallpapers/wallpapers.qbs"
         Properties {
             condition: project.exclude.indexOf("wallpapers") == -1
-        }
-    }
-
-    SubProject {
-        filePath: "desktop/wayland/wayland.qbs"
-        Properties {
-            condition: project.exclude.indexOf("wayland") == -1
-            useStaticAnalyzer: project.useStaticAnalyzer
-            autotestEnabled: project.autotestEnabled
         }
     }
 

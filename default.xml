@@ -15,6 +15,7 @@
 
   <project name="qbs-shared" path="common/qbs-shared" groups="common"/>
 
+  <project name="eglfs" path="desktop/eglfs" groups="desktop"/>
   <project name="materialdecoration" path="desktop/materialdecoration" groups="desktop"/>
   <project name="networkmanager" path="desktop/networkmanager" groups="desktop"/>
   <project name="platformtheme" path="desktop/platformtheme" groups="desktop"/>
@@ -26,7 +27,6 @@
   <project name="shell" path="desktop/shell" groups="desktop"/>
   <project name="themes" path="desktop/themes" groups="desktop"/>
   <project name="wallpapers" path="desktop/wallpapers" groups="desktop"/>
-  <project name="wayland" path="desktop/wayland" groups="desktop"/>
   <project name="qml-xwayland" path="desktop/qml-xwayland" groups="desktop"/>
   <project name="xdg-desktop-portal-liri" path="desktop/xdg-desktop-portal-liri" groups="desktop"/>
 
