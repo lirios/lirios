@@ -13,49 +13,25 @@ Project {
     property stringList exclude: []
 
     minimumQbsVersion: "1.9.0"
-    qbsSearchPaths: ["qbs-shared"]
+    qbsSearchPaths: ["common/qbs-shared"]
+
+    /*
+     * Common
+     */
 
     SubProject {
-        filePath: "appcenter/appcenter.qbs"
+        filePath: "common/qbs-shared/qbs-shared.qbs"
         Properties {
-            condition: project.exclude.indexOf("appcenter") == -1
-            useStaticAnalyzer: project.useStaticAnalyzer
+            condition: project.exclude.indexOf("qbs-shared") == -1
         }
     }
 
-    SubProject {
-        filePath: "browser/browser.qbs"
-        Properties {
-            condition: project.exclude.indexOf("browser") == -1
-            useStaticAnalyzer: project.useStaticAnalyzer
-        }
-    }
+    /*
+     * Libraries
+     */
 
     SubProject {
-        filePath: "calamares-branding/calamares-branding.qbs"
-        Properties {
-            condition: project.exclude.indexOf("calamares-branding") == -1
-        }
-    }
-
-    SubProject {
-        filePath: "calculator/calculator.qbs"
-        Properties {
-            condition: project.exclude.indexOf("calculator") == -1
-            useStaticAnalyzer: project.useStaticAnalyzer
-        }
-    }
-
-    SubProject {
-        filePath: "files/files.qbs"
-        Properties {
-            condition: project.exclude.indexOf("files") == -1
-            useStaticAnalyzer: project.useStaticAnalyzer
-        }
-    }
-
-    SubProject {
-        filePath: "fluid/fluid.qbs"
+        filePath: "libraries/fluid/fluid.qbs"
         Properties {
             condition: project.exclude.indexOf("fluid") == -1
             useSystemQbsShared: true
@@ -65,7 +41,7 @@ Project {
     }
 
     SubProject {
-        filePath: "libliri/libliri.qbs"
+        filePath: "libraries/libliri/libliri.qbs"
         Properties {
             condition: project.exclude.indexOf("libliri") == -1
             useStaticAnalyzer: project.useStaticAnalyzer
@@ -74,62 +50,7 @@ Project {
     }
 
     SubProject {
-        filePath: "materialdecoration/materialdecoration.qbs"
-        Properties {
-            condition: project.exclude.indexOf("materialdecoration") == -1
-            useStaticAnalyzer: project.useStaticAnalyzer
-        }
-    }
-
-    SubProject {
-        filePath: "networkmanager/networkmanager.qbs"
-        Properties {
-            condition: project.exclude.indexOf("networkmanager") == -1
-            useStaticAnalyzer: project.useStaticAnalyzer
-        }
-    }
-
-    SubProject {
-        filePath: "player/player.qbs"
-        Properties {
-            condition: project.exclude.indexOf("player") == -1
-            useStaticAnalyzer: project.useStaticAnalyzer
-        }
-    }
-
-    SubProject {
-        filePath: "platformtheme/platformtheme.qbs"
-        Properties {
-            condition: project.exclude.indexOf("platformtheme") == -1
-            useStaticAnalyzer: project.useStaticAnalyzer
-        }
-    }
-
-    SubProject {
-        filePath: "power-manager/power-manager.qbs"
-        Properties {
-            condition: project.exclude.indexOf("power-manager") == -1
-            useStaticAnalyzer: project.useStaticAnalyzer
-        }
-    }
-
-    SubProject {
-        filePath: "pulseaudio/pulseaudio.qbs"
-        Properties {
-            condition: project.exclude.indexOf("pulseaudio") == -1
-            useStaticAnalyzer: project.useStaticAnalyzer
-        }
-    }
-
-    SubProject {
-        filePath: "qbs-shared/qbs-shared.qbs"
-        Properties {
-            condition: project.exclude.indexOf("qbs-shared") == -1
-        }
-    }
-
-    SubProject {
-        filePath: "qtaccountsservice/qtaccountsservice.qbs"
+        filePath: "libraries/qtaccountsservice/qtaccountsservice.qbs"
         Properties {
             condition: project.exclude.indexOf("qtaccountsservice") == -1
             useStaticAnalyzer: project.useStaticAnalyzer
@@ -138,7 +59,7 @@ Project {
     }
 
     SubProject {
-        filePath: "qtgsettings/qtgsettings.qbs"
+        filePath: "libraries/qtgsettings/qtgsettings.qbs"
         Properties {
             condition: project.exclude.indexOf("qtgsettings") == -1
             useStaticAnalyzer: project.useStaticAnalyzer
@@ -147,7 +68,7 @@ Project {
     }
 
     SubProject {
-        filePath: "qtudev/qtudev.qbs"
+        filePath: "libraries/qtudev/qtudev.qbs"
         Properties {
             condition: project.exclude.indexOf("qtudev") == -1
             useStaticAnalyzer: project.useStaticAnalyzer
@@ -155,8 +76,52 @@ Project {
         }
     }
 
+    /*
+     * Desktop
+     */
+
     SubProject {
-        filePath: "screencast/screencast.qbs"
+        filePath: "desktop/materialdecoration/materialdecoration.qbs"
+        Properties {
+            condition: project.exclude.indexOf("materialdecoration") == -1
+            useStaticAnalyzer: project.useStaticAnalyzer
+        }
+    }
+
+    SubProject {
+        filePath: "desktop/networkmanager/networkmanager.qbs"
+        Properties {
+            condition: project.exclude.indexOf("networkmanager") == -1
+            useStaticAnalyzer: project.useStaticAnalyzer
+        }
+    }
+
+    SubProject {
+        filePath: "desktop/platformtheme/platformtheme.qbs"
+        Properties {
+            condition: project.exclude.indexOf("platformtheme") == -1
+            useStaticAnalyzer: project.useStaticAnalyzer
+        }
+    }
+
+    SubProject {
+        filePath: "desktop/power-manager/power-manager.qbs"
+        Properties {
+            condition: project.exclude.indexOf("power-manager") == -1
+            useStaticAnalyzer: project.useStaticAnalyzer
+        }
+    }
+
+    SubProject {
+        filePath: "desktop/pulseaudio/pulseaudio.qbs"
+        Properties {
+            condition: project.exclude.indexOf("pulseaudio") == -1
+            useStaticAnalyzer: project.useStaticAnalyzer
+        }
+    }
+
+    SubProject {
+        filePath: "desktop/screencast/screencast.qbs"
         Properties {
             condition: project.exclude.indexOf("screencast") == -1
             useStaticAnalyzer: project.useStaticAnalyzer
@@ -164,7 +129,7 @@ Project {
     }
 
     SubProject {
-        filePath: "screenshot/screenshot.qbs"
+        filePath: "desktop/screenshot/screenshot.qbs"
         Properties {
             condition: project.exclude.indexOf("screenshot") == -1
             useStaticAnalyzer: project.useStaticAnalyzer
@@ -172,7 +137,7 @@ Project {
     }
 
     SubProject {
-        filePath: "settings/settings.qbs"
+        filePath: "desktop/settings/settings.qbs"
         Properties {
             condition: project.exclude.indexOf("settings") == -1
             useStaticAnalyzer: project.useStaticAnalyzer
@@ -180,7 +145,7 @@ Project {
     }
 
     SubProject {
-        filePath: "shell/shell.qbs"
+        filePath: "desktop/shell/shell.qbs"
         Properties {
             condition: project.exclude.indexOf("shell") == -1
             useStaticAnalyzer: project.useStaticAnalyzer
@@ -188,37 +153,21 @@ Project {
     }
 
     SubProject {
-        filePath: "terminal/terminal.qbs"
-        Properties {
-            condition: project.exclude.indexOf("terminal") == -1
-            useStaticAnalyzer: project.useStaticAnalyzer
-        }
-    }
-
-    SubProject {
-        filePath: "text/text.qbs"
-        Properties {
-            condition: project.exclude.indexOf("text") == -1
-            useStaticAnalyzer: project.useStaticAnalyzer
-        }
-    }
-
-    SubProject {
-        filePath: "themes/themes.qbs"
+        filePath: "desktop/themes/themes.qbs"
         Properties {
             condition: project.exclude.indexOf("themes") == -1
         }
     }
 
     SubProject {
-        filePath: "wallpapers/wallpapers.qbs"
+        filePath: "desktop/wallpapers/wallpapers.qbs"
         Properties {
             condition: project.exclude.indexOf("wallpapers") == -1
         }
     }
 
     SubProject {
-        filePath: "wayland/wayland.qbs"
+        filePath: "desktop/wayland/wayland.qbs"
         Properties {
             condition: project.exclude.indexOf("wayland") == -1
             useStaticAnalyzer: project.useStaticAnalyzer
@@ -227,7 +176,7 @@ Project {
     }
 
     SubProject {
-        filePath: "qml-xwayland/qml-xwayland.qbs"
+        filePath: "desktop/qml-xwayland/qml-xwayland.qbs"
         Properties {
             condition: project.exclude.indexOf("qml-xwayland") == -1
             useStaticAnalyzer: project.useStaticAnalyzer
@@ -236,10 +185,81 @@ Project {
     }
 
     SubProject {
-        filePath: "xdg-desktop-portal-liri/xdg-desktop-portal-liri.qbs"
+        filePath: "desktop/xdg-desktop-portal-liri/xdg-desktop-portal-liri.qbs"
         Properties {
             condition: project.exclude.indexOf("xdg-desktop-portal-liri") == -1
             useStaticAnalyzer: project.useStaticAnalyzer
+        }
+    }
+
+    /*
+     * Apps
+     */
+
+    SubProject {
+        filePath: "apps/appcenter/appcenter.qbs"
+        Properties {
+            condition: project.exclude.indexOf("appcenter") == -1
+            useStaticAnalyzer: project.useStaticAnalyzer
+        }
+    }
+
+    SubProject {
+        filePath: "apps/browser/browser.qbs"
+        Properties {
+            condition: project.exclude.indexOf("browser") == -1
+            useStaticAnalyzer: project.useStaticAnalyzer
+        }
+    }
+
+    SubProject {
+        filePath: "apps/calculator/calculator.qbs"
+        Properties {
+            condition: project.exclude.indexOf("calculator") == -1
+            useStaticAnalyzer: project.useStaticAnalyzer
+        }
+    }
+
+    SubProject {
+        filePath: "apps/files/files.qbs"
+        Properties {
+            condition: project.exclude.indexOf("files") == -1
+            useStaticAnalyzer: project.useStaticAnalyzer
+        }
+    }
+
+    SubProject {
+        filePath: "apps/player/player.qbs"
+        Properties {
+            condition: project.exclude.indexOf("player") == -1
+            useStaticAnalyzer: project.useStaticAnalyzer
+        }
+    }
+
+    SubProject {
+        filePath: "apps/terminal/terminal.qbs"
+        Properties {
+            condition: project.exclude.indexOf("terminal") == -1
+            useStaticAnalyzer: project.useStaticAnalyzer
+        }
+    }
+
+    SubProject {
+        filePath: "apps/text/text.qbs"
+        Properties {
+            condition: project.exclude.indexOf("text") == -1
+            useStaticAnalyzer: project.useStaticAnalyzer
+        }
+    }
+
+    /*
+     * OS
+     */
+
+    SubProject {
+        filePath: "os/calamares-branding/calamares-branding.qbs"
+        Properties {
+            condition: project.exclude.indexOf("calamares-branding") == -1
         }
     }
 }
