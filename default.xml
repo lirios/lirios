@@ -11,6 +11,7 @@
     <copyfile src="config/_commit-template" dest=".commit-template"/>
     <copyfile src="config/liri.qbs" dest="liri.qbs"/>
     <copyfile src="env-setup.sh" dest="env-setup.sh"/>
+    <copyfile src="env-setup-qbs.sh" dest="env-setup-qbs.sh"/>
   </project>
 
   <project name="qbs-shared" path="common/qbs-shared" groups="common"/>
