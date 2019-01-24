@@ -90,14 +90,6 @@ Project {
     }
 
     SubProject {
-        filePath: "desktop/materialdecoration/materialdecoration.qbs"
-        Properties {
-            condition: project.exclude.indexOf("materialdecoration") == -1
-            useStaticAnalyzer: project.useStaticAnalyzer
-        }
-    }
-
-    SubProject {
         filePath: "desktop/networkmanager/networkmanager.qbs"
         Properties {
             condition: project.exclude.indexOf("networkmanager") == -1
