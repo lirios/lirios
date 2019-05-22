@@ -1,11 +1,8 @@
 Liri
 ====
 
-[![ZenHub.io](https://img.shields.io/badge/supercharged%20by-zenhub.io-blue.svg)](https://zenhub.io)
-
 [![GitHub issues](https://img.shields.io/github/issues/lirios/lirios.svg)](https://github.com/lirios/lirios/issues)
 [![Bountysource](https://img.shields.io/bountysource/team/liri/activity.svg)](https://bountysource.com/teams/liri)
-[![Maintained](https://img.shields.io/maintenance/yes/2018.svg)](https://github.com/lirios/lirios/commits/master)
 
 This repository contains:
 
