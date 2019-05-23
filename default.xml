@@ -24,6 +24,7 @@
   <project name="platformtheme" path="desktop/platformtheme" groups="desktop"/>
   <project name="power-manager" path="desktop/power-manager" groups="desktop"/>
   <project name="pulseaudio" path="desktop/pulseaudio" groups="desktop"/>
+  <project name="session" path="desktop/session" groups="desktop"/>
   <project name="settings" path="desktop/settings" groups="desktop"/>
   <project name="screencast" path="desktop/screencast" groups="desktop"/>
   <project name="screenshot" path="desktop/screenshot" groups="desktop"/>
