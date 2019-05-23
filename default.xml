@@ -19,6 +19,7 @@
   <project name="cmake-shared" path="common/cmake-shared" groups="common"/>
 
   <project name="eglfs" path="desktop/eglfs" groups="desktop"/>
+  <project name="initial-setup" path="desktop/initial-setup" groups="desktop"/>
   <project name="materialdecoration" path="desktop/materialdecoration" groups="desktop"/>
   <project name="networkmanager" path="desktop/networkmanager" groups="desktop"/>
   <project name="platformtheme" path="desktop/platformtheme" groups="desktop"/>
