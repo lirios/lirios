@@ -15,11 +15,9 @@
     <copyfile src="env-setup-qbs.sh" dest="env-setup-qbs.sh"/>
   </project>
 
-  <project name="qbs-shared" path="common/qbs-shared" groups="common"/>
-  <project name="cmake-shared" path="common/cmake-shared" groups="common"/>
-
   <project name="eglfs" path="desktop/eglfs" groups="desktop"/>
   <project name="initial-setup" path="desktop/initial-setup" groups="desktop"/>
+  <project name="libliri" path="desktop/libliri" groups="desktop"/>
   <project name="materialdecoration" path="desktop/materialdecoration" groups="desktop"/>
   <project name="networkmanager" path="desktop/networkmanager" groups="desktop"/>
   <project name="platformtheme" path="desktop/platformtheme" groups="desktop"/>
@@ -35,8 +33,9 @@
   <project name="qml-xwayland" path="desktop/qml-xwayland" groups="desktop"/>
   <project name="xdg-desktop-portal-liri" path="desktop/xdg-desktop-portal-liri" groups="desktop"/>
 
+  <project name="cmake-shared" path="libraries/cmake-shared" groups="common"/>
   <project name="fluid" path="libraries/fluid" groups="libraries"/>
-  <project name="libliri" path="libraries/libliri" groups="libraries"/>
+  <project name="qbs-shared" path="libraries/qbs-shared" groups="common"/>
   <project name="qtaccountsservice" path="libraries/qtaccountsservice" groups="libraries"/>
   <project name="qtgsettings" path="libraries/qtgsettings" groups="libraries"/>
   <project name="qtudev" path="libraries/qtudev" groups="libraries"/>
