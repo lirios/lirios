@@ -7,7 +7,7 @@ project(Liri
 
 ## Add some paths to check for CMake modules:
 set(LIRI_LOCAL_ECM TRUE)
-list(APPEND CMAKE_MODULE_PATH "${CMAKE_CURRENT_SOURCE_DIR}/common/cmake-shared/modules")
+list(APPEND CMAKE_MODULE_PATH "${CMAKE_CURRENT_SOURCE_DIR}/libraries/cmake-shared/modules")
 
 ## Liri specific setup common for all modules:
 include(LiriSetup)
