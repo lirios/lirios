@@ -31,6 +31,7 @@
   <project name="themes" path="desktop/themes" groups="desktop"/>
   <project name="wallpapers" path="desktop/wallpapers" groups="desktop"/>
   <project name="qml-xwayland" path="desktop/qml-xwayland" groups="desktop"/>
+  <project name="wayland" path="desktop/wayland" groups="desktop"/>
   <project name="xdg-desktop-portal-liri" path="desktop/xdg-desktop-portal-liri" groups="desktop"/>
 
   <project name="cmake-shared" path="libraries/cmake-shared" groups="common"/>
