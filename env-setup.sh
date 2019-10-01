@@ -32,3 +32,20 @@ if [ "$1" == "nvidia" ]; then
 else
     export QT_XCB_GL_INTEGRATION="xcb_egl"
 fi
+
+# Update D-Bus activation environment and link systemd units
+if which systemctl >/dev/null; then
+    # Pick up our systemd units
+    mkdir -p "$XDG_RUNTIME_DIR/systemd/user.control"
+    command cp -r $LIRIDIR/lib/systemd/user/* "$XDG_RUNTIME_DIR/systemd/user.control"
+    mkdir -p "$XDG_RUNTIME_DIR/generator"
+    command cp -r $LIRIDIR/lib/systemd/user-generators/* "$XDG_RUNTIME_DIR/generator"
+    systemctl --user daemon-reload
+
+    # Let the session bus reread the environment
+    systemctl --user reload dbus.service
+else
+    if which dbus-update-activation-environment >/dev/null; then
+        dbus-update-activation-environment --systemd XDG_DATA_DIRS XDG_CONFIG_DIRS LD_LIBRARY_PATH QT_PLUGIN_PATH QML2_IMPORT_PATH PATH
+    fi
+fi
