@@ -38,8 +38,6 @@ if which systemctl >/dev/null; then
     # Pick up our systemd units
     mkdir -p "$XDG_RUNTIME_DIR/systemd/user.control"
     command cp -r $LIRIDIR/lib/systemd/user/* "$XDG_RUNTIME_DIR/systemd/user.control"
-    mkdir -p "$XDG_RUNTIME_DIR/generator"
-    command cp -r $LIRIDIR/lib/systemd/user-generators/* "$XDG_RUNTIME_DIR/generator"
     systemctl --user daemon-reload
 
     # Let the session bus reread the environment
