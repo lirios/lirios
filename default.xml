@@ -45,8 +45,8 @@
   <project name="browser" path="apps/browser" groups="apps"/>
   <project name="calculator" path="apps/calculator" groups="apps"/>
   <project name="files" path="apps/files" groups="apps"/>
-  <project name="irc" path="apps/irc" groups="apps"/>
   <project name="player" path="apps/player" groups="apps"/>
+  <project name="samtal" path="apps/samtal" groups="apps"/>
   <project name="terminal" path="apps/terminal" groups="apps"/>
   <project name="text" path="apps/text" groups="apps"/>
 
