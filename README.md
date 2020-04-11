@@ -8,6 +8,7 @@ This repository contains:
 
 * Manifest files for developers.
 * General issue tracker.
+* [Backers list](BACKERS.md).
 * Wiki.
 
 ## Contributor Guide
