@@ -1,0 +1,27 @@
+#!/bin/bash
+
+# SPDX-FileCopyrightText: 2020 Pier Luigi Fiorini <pierluigi.fiorini@liri.io>
+#
+# SPDX-License-Identifier: MIT
+
+path=$1
+
+if [ -z "$path" ]; then
+    echo "Usage: $0 <source tree root>"
+    exit 1
+fi
+
+if [ ! -d "$path" ]; then
+    echo "$path is not a directory!"
+    exit 1
+fi
+
+if [ -z "$(which clang-format)" ]; then
+    echo "$0 needs clang-format, please install the clang package"
+    exit 1
+fi
+
+curdir=$(readlink -f `dirname $0`)
+style=$curdir/.clang-format
+
+find $path -name "*.h" -o -name "*.cpp" | xargs clang-format -style=file -assume-filename=$style -i

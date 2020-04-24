@@ -11,6 +11,7 @@
     <copyfile src="config/_commit-template" dest=".commit-template"/>
     <copyfile src="config/CMakeLists.txt" dest="CMakeLists.txt"/>
     <copyfile src="env-setup.sh" dest="env-setup.sh"/>
+    <copyfile src="format" dest="format"/>
   </project>
 
   <project name="eglfs" path="desktop/eglfs" groups="desktop"/>
