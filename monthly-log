@@ -1,0 +1,14 @@
+#!/bin/bash
+
+# SPDX-FileCopyrightText: 2020 Pier Luigi Fiorini <pierluigi.fiorini@liri.io>
+#
+# SPDX-License-Identifier: MIT
+
+month=$1
+
+if [ -z "$month" ]; then
+    echo "Usage: $0 <month YYYY-MM>"
+    exit 1
+fi
+
+repo forall -p -c "git log --since=${month}-01 --until=${month}-31 --no-merges --date-order --abbrev-commit --date=local --date=short --pretty='format:%ad %s' --all"

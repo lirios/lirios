@@ -12,6 +12,7 @@
     <copyfile src="config/CMakeLists.txt" dest="CMakeLists.txt"/>
     <copyfile src="env-setup.sh" dest="env-setup.sh"/>
     <copyfile src="format" dest="format"/>
+    <copyfile src="monthly-log" dest="monthly-log"/>
   </project>
 
   <project name="eglfs" path="desktop/eglfs" groups="desktop"/>
