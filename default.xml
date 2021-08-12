@@ -18,9 +18,8 @@
   <project name="eglfs" path="desktop/eglfs" groups="desktop"/>
   <project name="initial-setup" path="desktop/initial-setup" groups="desktop"/>
   <project name="libliri" path="desktop/libliri" groups="desktop"/>
-  <project name="materialdecoration" path="desktop/materialdecoration" groups="desktop"/>
   <project name="networkmanager" path="desktop/networkmanager" groups="desktop"/>
-  <project name="platformtheme" path="desktop/platformtheme" groups="desktop"/>
+  <project name="qtintegration" path="desktop/qtintegration" groups="desktop"/>
   <project name="power-manager" path="desktop/power-manager" groups="desktop"/>
   <project name="pulseaudio" path="desktop/pulseaudio" groups="desktop"/>
   <project name="session" path="desktop/session" groups="desktop"/>
