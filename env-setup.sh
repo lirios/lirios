@@ -19,12 +19,23 @@ if [ -z "$XDG_CONFIG_DIRS" ]; then
     XDG_CONFIG_DIRS="/etc/xdg"
 fi
 
-export LD_LIBRARY_PATH="$LIRIDIR/lib:$LD_LIBRARY_PATH"
+if [ -d $LIRIDIR/lib64 ]; then
+    LIRI_LIBDIR=$LIRIDIR/lib64
+else
+    LIRI_LIBDIR=$LIRIDIR/lib
+fi
+if [ -d $LIRIDIR/lib64/systemd ]; then
+    LIRI_SYSTEMD_LIBDIR=$LIRIDIR/lib64/systemd
+else
+    LIRI_SYSTEMD_LIBDIR=$LIRIDIR/lib/systemd
+fi
+
+export LD_LIBRARY_PATH="$LIRI_LIBDIR:$LD_LIBRARY_PATH"
 export XDG_DATA_DIRS="$LIRIDIR/share:$XDG_DATA_DIRS"
 export XDG_CONFIG_DIRS="$LIRIDIR/etc/xdg:$XDG_CONFIG_DIRS"
-export QT_PLUGIN_PATH="$LIRIDIR/lib/plugins"
-export QML2_IMPORT_PATH="$LIRIDIR/lib/qml:$QML2_IMPORT_PATH"
-export PKG_CONFIG_PATH="$LIRIDIR/lib/pkgconfig:$PKG_CONFIG_PATH"
+export QT_PLUGIN_PATH="$LIRI_LIBDIR/plugins"
+export QML2_IMPORT_PATH="$LIRI_LIBDIR/qml:$QML2_IMPORT_PATH"
+export PKG_CONFIG_PATH="$LIRI_LIBDIR/pkgconfig:$PKG_CONFIG_PATH"
 export PATH="$LIRIDIR/bin:$PATH"
 
 if [ "$1" == "nvidia" ]; then
@@ -37,7 +48,7 @@ fi
 if which systemctl >/dev/null; then
     # Pick up our systemd units
     mkdir -p "$XDG_RUNTIME_DIR/systemd/user.control"
-    command cp -r $LIRIDIR/lib/systemd/user/* "$XDG_RUNTIME_DIR/systemd/user.control"
+    command cp -r $LIRI_SYSTEMD_LIBDIOR/user/* "$XDG_RUNTIME_DIR/systemd/user.control"
     systemctl --user daemon-reload
 
     # Let the session bus reread the environment
