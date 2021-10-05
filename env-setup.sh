@@ -48,7 +48,7 @@ fi
 if which systemctl >/dev/null; then
     # Pick up our systemd units
     mkdir -p "$XDG_RUNTIME_DIR/systemd/user.control"
-    command cp -r $LIRI_SYSTEMD_LIBDIOR/user/* "$XDG_RUNTIME_DIR/systemd/user.control"
+    command cp -r $LIRI_SYSTEMD_LIBDIR/user/* "$XDG_RUNTIME_DIR/systemd/user.control"
     systemctl --user daemon-reload
 
     # Let the session bus reread the environment
