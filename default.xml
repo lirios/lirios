@@ -46,7 +46,6 @@
   <project name="calculator" path="calculator" groups="apps"/>
   <project name="files" path="files" groups="apps"/>
   <project name="player" path="player" groups="apps"/>
-  <project name="samtal" path="samtal" groups="apps"/>
   <project name="terminal" path="terminal" groups="apps"/>
   <project name="text" path="text" groups="apps"/>
 
