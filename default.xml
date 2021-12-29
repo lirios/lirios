@@ -9,8 +9,8 @@
     <copyfile src="README.md" dest="README.md"/>
     <copyfile src="config/_clang-format" dest=".clang-format"/>
     <copyfile src="config/_commit-template" dest=".commit-template"/>
+    <copyfile src="config/_dependencies.cmake" dest=".dependencies.cmake"/>
     <copyfile src="config/CMakeLists.txt" dest="CMakeLists.txt"/>
-    <copyfile src="config/dependencies.cmake" dest=".dependencies.cmake"/>
     <copyfile src="config/LiriSubprojects.cmake" dest="cmake/LiriSubprojects.cmake"/>
     <copyfile src="env-setup.sh" dest="env-setup.sh"/>
     <copyfile src="format" dest="format"/>
