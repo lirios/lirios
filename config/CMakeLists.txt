@@ -29,7 +29,7 @@ if(NOT LIRI_BUILD_SUBPROJECTS)
         _liri_internal_find_subprojects(LIRI_BUILD_SUBPROJECTS)
     endif()
 endif()
-set(LIRI_BUILD_SUBPROJECTS "${LIRI_BUILD_SUBPROJECTS}" CACHE STRING "List of subprojects to build")
+set(LIRI_BUILD_SUBPROJECTS "${LIRI_BUILD_SUBPROJECTS}" STRING "List of subprojects to build")
 
 ## Dependencies:
 include(.dependencies.cmake)
