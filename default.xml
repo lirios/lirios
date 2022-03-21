@@ -17,7 +17,6 @@
     <copyfile src="monthly-log" dest="monthly-log"/>
   </project>
 
-  <project name="eglfs" path="eglfs" groups="desktop"/>
   <project name="initial-setup" path="initial-setup" groups="desktop"/>
   <project name="libliri" path="libliri" groups="desktop"/>
   <project name="networkmanager" path="networkmanager" groups="desktop"/>
@@ -31,17 +30,17 @@
   <project name="shell" path="shell" groups="desktop"/>
   <project name="themes" path="themes" groups="desktop"/>
   <project name="wallpapers" path="wallpapers" groups="desktop"/>
-  <project name="qml-xwayland" path="qml-xwayland" groups="desktop"/>
-  <project name="wayland" path="wayland" groups="desktop"/>
   <project name="xdg-desktop-portal-liri" path="xdg-desktop-portal-liri" groups="desktop"/>
 
   <project name="cmake-shared" path="cmake-shared" groups="common"/>
   <project name="qbs-shared" path="qbs-shared" groups="common"/>
 
+  <project name="aurora-client" path="aurora-client" groups="libraries"/>
+  <project name="aurora-compositor" path="aurora-compositor" groups="libraries"/>
+  <project name="aurora-scanner" path="aurora-scanner" groups="libraries"/>
   <project name="fluid" path="fluid" groups="libraries"/>
   <project name="qtaccountsservice" path="qtaccountsservice" groups="libraries"/>
   <project name="qtgsettings" path="qtgsettings" groups="libraries"/>
-  <project name="qtudev" path="qtudev" groups="libraries"/>
 
   <project name="appcenter" path="appcenter" groups="apps"/>
   <project name="browser" path="browser" groups="apps"/>
