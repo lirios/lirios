@@ -10,6 +10,9 @@ project(Liri
     LANGUAGES CXX C
 )
 
+## This is a super build
+set(LIRI_SUPERBUILD TRUE)
+
 ## Add some paths to check for CMake modules:
 set(LIRI_LOCAL_ECM TRUE)
 list(APPEND CMAKE_MODULE_PATH "${CMAKE_CURRENT_SOURCE_DIR}/cmake")
@@ -29,7 +32,6 @@ if(NOT LIRI_BUILD_SUBPROJECTS)
         _liri_internal_find_subprojects(LIRI_BUILD_SUBPROJECTS)
     endif()
 endif()
-set(LIRI_BUILD_SUBPROJECTS "${LIRI_BUILD_SUBPROJECTS}" STRING "List of subprojects to build")
 
 ## Dependencies:
 include(.dependencies.cmake)
@@ -39,3 +41,6 @@ _liri_internal_sort_subprojects("${LIRI_BUILD_SUBPROJECTS}" LIRI_BUILD_SUBPROJEC
 foreach(subproject IN LISTS LIRI_BUILD_SUBPROJECTS)
     add_subdirectory(${subproject})
 endforeach()
+
+## Features:
+feature_summary(QUIET_ON_EMPTY WHAT ENABLED_FEATURES DISABLED_FEATURES)
