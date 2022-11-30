@@ -17,6 +17,7 @@ set(LIRI_SUPERBUILD TRUE)
 set(LIRI_LOCAL_ECM TRUE)
 list(APPEND CMAKE_MODULE_PATH "${CMAKE_CURRENT_SOURCE_DIR}/cmake")
 list(APPEND CMAKE_MODULE_PATH "${CMAKE_CURRENT_SOURCE_DIR}/cmake-shared/modules")
+list(APPEND CMAKE_MODULE_PATH "${CMAKE_CURRENT_SOURCE_DIR}/cmake-shared/find-modules")
 
 ## Include internal functions:
 include(LiriSubprojects)
