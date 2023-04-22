@@ -13,7 +13,7 @@ This repository contains:
 
 ## Contributor Guide
 
-Please read the detailed [contributor guide](https://liri-dev.readthedocs.io/en/latest/contributing/contributor-guide/).
+Please read the detailed [contributor guide](https://docs.liri.io/contributing/contributor-guide/).
 
 ## General issue tracker
 
