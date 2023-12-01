@@ -1,5 +1,5 @@
 set(__liri_subproject_dependencies_appcenter "cmake-shared;qtaccountsservice;fluid;libliri")
-set(__liri_subproject_dependencies_aurora-compositor "cmake-shared;aurora-scanner;aurora-client")
+set(__liri_subproject_dependencies_aurora-compositor "cmake-shared;aurora-scanner")
 set(__liri_subproject_dependencies_aurora-client "cmake-shared;aurora-scanner")
 set(__liri_subproject_dependencies_aurora-scanner "cmake-shared")
 set(__liri_subproject_dependencies_browser "cmake-shared;fluid")
