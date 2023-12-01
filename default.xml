@@ -33,7 +33,6 @@
   <project name="xdg-desktop-portal-liri" path="xdg-desktop-portal-liri" groups="desktop"/>
 
   <project name="cmake-shared" path="cmake-shared" groups="common"/>
-  <project name="qbs-shared" path="qbs-shared" groups="common"/>
 
   <project name="aurora-client" path="aurora-client" groups="libraries"/>
   <project name="aurora-compositor" path="aurora-compositor" groups="libraries"/>
