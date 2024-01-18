@@ -49,7 +49,7 @@ function(_liri_internal_sort_subprojects subprojects out_var)
         endforeach()
     endforeach()
 
-    message(NOTICE "_liri_internal_sort_subprojects: ${ordered}")
+    message(DEBUG "_liri_internal_sort_subprojects: ${ordered}")
 
     set(${out_var} "${ordered}" PARENT_SCOPE)
 endfunction()

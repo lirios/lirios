@@ -21,12 +21,11 @@
   <project name="libliri" path="libliri" groups="desktop"/>
   <project name="networkmanager" path="networkmanager" groups="desktop"/>
   <project name="qtintegration" path="qtintegration" groups="desktop"/>
+  <project name="qtshellintegration" path="qtshellintegration" groups="desktop"/>
   <project name="power-manager" path="power-manager" groups="desktop"/>
   <project name="pulseaudio" path="pulseaudio" groups="desktop"/>
   <project name="session" path="session" groups="desktop"/>
   <project name="settings" path="settings" groups="desktop"/>
-  <project name="screencast" path="screencast" groups="desktop"/>
-  <project name="screenshot" path="screenshot" groups="desktop"/>
   <project name="shell" path="shell" groups="desktop"/>
   <project name="themes" path="themes" groups="desktop"/>
   <project name="wallpapers" path="wallpapers" groups="desktop"/>
