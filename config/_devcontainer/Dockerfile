@@ -6,6 +6,7 @@ RUN echo -en "[kde-unstable]\nInclude = /etc/pacman.d/mirrorlist\n$(cat /etc/pac
     sed -i '/\[testing\]/a [extra-testing]\nInclude = /etc/pacman.d/mirrorlist' /etc/pacman.conf
 RUN pacman -Syu --noconfirm && \
     pacman -S --noconfirm \
+        vim \
         base-devel \
         git \
         clang \
@@ -28,13 +29,21 @@ RUN pacman -Syu --noconfirm && \
         ninja \
         extra-cmake-modules \
         solid \
+        appstream-qt \
         networkmanager-qt \
         modemmanager-qt \
         libdrm \
         libinput \
         libxcvt \
         libdisplay-info \
-        wayland-protocols
+        wayland-protocols \
+        flatpak \
+        doxygen \
+        graphviz \
+        python-pipx
+RUN pipx install --global doxyqml && \
+    pipx ensurepath --global && \
+    doxyqml --version || /bin/false
 
 # User variables
 ARG USERNAME=liriuser

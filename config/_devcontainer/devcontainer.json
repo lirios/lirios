@@ -6,10 +6,11 @@
     "customizations": {
         "vscode": {
             "extensions": [
-                "twxs.cmake",
                 "ms-vscode.cmake-tools",
                 "ms-vscode.cpptools",
-                "ms-vscode.cpptools-extension-pack"
+                "ms-vscode.cpptools-extension-pack",
+                "AndreOneti.qml-formatter",
+                "theqtcompany.qt"
             ]
         }
     }
